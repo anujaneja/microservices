@@ -66,4 +66,14 @@ public class ExchangeValue {
     public void setConversionMultiple(BigDecimal conversionMultiple) {
         this.conversionMultiple = conversionMultiple;
     }
+
+    @Override public String toString() {
+        return "ExchangeValue{" +
+                "id=" + id +
+                ", from='" + from + '\'' +
+                ", to='" + to + '\'' +
+                ", conversionMultiple=" + conversionMultiple +
+                ", port=" + port +
+                '}';
+    }
 }
